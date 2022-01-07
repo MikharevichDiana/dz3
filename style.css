@@ -44,7 +44,6 @@ h3 {
 .container {
   width: 1000px;
   margin: 0 auto;
-  background-color: aquamarine;
 }
 
 .btn {
@@ -78,7 +77,24 @@ h3 {
   /* background-color: pink; */
 }
 
+.contacts {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts a {
+  color: #757575;
+}
+
+.contacts a:hover {
+  color: #2196f3;
+}
+
 /* /components */
+
+/* header  */
 
 .header {
 }
@@ -98,31 +114,18 @@ h3 {
   align-items: center;
 }
 
+.navigation a:hover {
+  color: #2196f3;
+}
+
+/* /header  */
+
 .footer .logo {
   /* color: #ffffff; */
 }
 
 .advantages h3 {
   text-transform: uppercase;
-}
-
-.navigation a:hover {
-  color: #2196f3;
-}
-
-.contacts a:hover {
-  color: #2196f3;
-}
-
-.contacts a {
-  color: #757575;
-}
-
-.contacts {
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 .tel {
