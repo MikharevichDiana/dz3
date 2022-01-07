@@ -41,6 +41,12 @@ h3 {
   line-height: 1.14;
 }
 
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: aquamarine;
+}
+
 .btn {
   cursor: pointer;
   font-style: normal;
@@ -51,8 +57,6 @@ h3 {
   color: #ffffff;
   background: #2196f3;
 }
-
-/* /components */
 
 .logo {
   font-family: Raleway;
@@ -65,6 +69,33 @@ h3 {
 
 .logo-accent {
   color: #2196f3;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* background-color: pink; */
+}
+
+/* /components */
+
+.header {
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .navigation {
+  display: flex;
+}
+
+.header .menu,
+.header .contacts {
+  display: flex;
+  align-items: center;
 }
 
 .footer .logo {
