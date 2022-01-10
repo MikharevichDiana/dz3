@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -10,7 +14,6 @@ address {
   font-style: normal;
 }
 
-/* components */
 a {
   color: #212121;
   text-decoration: none;
@@ -20,6 +23,7 @@ p {
   color: #757575;
   margin: 0;
 }
+
 h1 {
   font-weight: 900;
   font-size: 44px;
@@ -27,7 +31,6 @@ h1 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0;
-  /* text-align: center; */
   color: #ffffff;
 }
 
@@ -51,6 +54,8 @@ h3 {
   padding: 15px;
 }
 
+/* components */
+
 .btn {
   cursor: pointer;
   font-style: normal;
@@ -58,8 +63,10 @@ h3 {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
   color: #ffffff;
   background: #2196f3;
+
   width: 200px;
   height: 50px;
   border: none;
@@ -83,7 +90,6 @@ h3 {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /* background-color: pink; */
 }
 
 .contacts {
@@ -112,7 +118,7 @@ h3 {
 .header .container {
   display: flex;
   justify-content: space-between;
-  /* background-color: blanchedalmond; */
+  border-bottom: 1px solid #ececec;
 }
 
 .header .navigation {
@@ -167,19 +173,20 @@ h3 {
 
 /* advantages */
 
-.advantages .container {
+.advantages {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .advantages h3 {
   text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .list-advantages {
   display: flex;
-  /* margin-bottom: 94px;
-  margin-top: 94px; */
 }
 
 .list-advantages li {
@@ -190,19 +197,16 @@ h3 {
   margin-right: 0;
 }
 
-.advantages h3 {
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 16px;
-}
-
 /* /advantages */
 
 /* services */
 
+.services {
+  padding-bottom: 94px;
+}
+
 .services .container {
   text-align: center;
-  padding-bottom: 94px;
 }
 
 .list-services {
@@ -226,13 +230,13 @@ h3 {
 /* .team */
 
 .section-team {
+  padding-bottom: 94px;
+  padding-top: 94px;
   background-color: #f5f4fa;
 }
 
 .section-team .container {
   text-align: center;
-  padding-bottom: 94px;
-  padding-top: 94px;
 }
 .team {
   display: flex;
@@ -259,7 +263,86 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* /.team */
+/* /team */
+
+/* filter-section */
+
+.filter-section .container {
+  display: flex;
+  justify-content: center;
+}
+
+.filter {
+  display: flex;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.filter li {
+  margin-right: 8px;
+  margin-bottom: 30px;
+}
+
+.filter li:last-child {
+  margin-right: 0;
+}
+
+.filter button {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: #212121;
+  background-color: #f5f4fa;
+  border: none;
+  margin: 6px 22px;
+}
+
+.filter button:hover {
+  background: #2196f3;
+  color: #ffffff;
+}
+
+/* /filter-section */
+
+/* cards */
+
+.cards p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards li {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  width: 370px;
+}
+
+.cards li:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.cards li img {
+  width: 100%;
+}
+.cards h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.cards h3,
+.cards p {
+  margin-left: 24px;
+}
+
+/* /cards */
 
 /* footer */
 
@@ -306,31 +389,4 @@ h3 {
 
 .footer .contacts li:last-child {
   margin-bottom: 0;
-}
-
-.filter-section .container {
-  display: flex;
-}
-
-.filter {
-  display: flex;
-  text-align: center;
-}
-
-.filter button {
-  cursor: pointer;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  color: #212121;
-}
-
-.filter button:hover {
-  background: #2196f3;
-  color: #ffffff;
-}
-
-.cards p {
-  font-size: 16px;
 }
