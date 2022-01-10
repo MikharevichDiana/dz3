@@ -51,7 +51,7 @@ h3 {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 /* components */
@@ -113,12 +113,12 @@ h3 {
 
 .header {
   padding: 25px 0;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #ececec;
 }
 
 .header .navigation {
@@ -267,6 +267,10 @@ h3 {
 
 /* filter-section */
 
+.filter-section {
+  padding-top: 94px;
+}
+
 .filter-section .container {
   display: flex;
   justify-content: center;
@@ -280,7 +284,6 @@ h3 {
 
 .filter li {
   margin-right: 8px;
-  margin-bottom: 30px;
 }
 
 .filter li:last-child {
